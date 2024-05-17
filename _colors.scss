@@ -1,0 +1,38 @@
+// COLORS
+:root {
+    --yellow: #ffd600;
+    --purple: #8331a7;
+    --white: #fff;
+    --black: #121212;
+    --orange: #faa21b;
+    --pink: #fbf7ff;
+    --gray80: #c4c4c4;
+    --gray20: #2f2f2f;
+    --gray50: #525050;
+    --violet: #57265f;
+    --deep: #471558;
+    --lightpurple: #cb8bda;
+  }
+  
+  .purple {
+    color: var(--purple);
+  }
+  
+  .land {
+    &.pink {
+      background: var(--pink);
+    }
+  
+    &.purple {
+      background: var(--purple);
+    }
+  
+    &.white {
+      background: var(--white);
+    }
+  
+    &.orange {
+      background: var(--orange);
+    }
+  }
+  

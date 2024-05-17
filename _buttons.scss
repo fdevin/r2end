@@ -1,0 +1,180 @@
+// ACTIONABLE ELEMENTS
+a {
+    color: var(--purple);
+  
+    &:active {
+      color: var(--orange);
+    }
+  
+    &:visited, &:hover {
+      color: var(--deep);
+    }
+  
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .catName a, .layout a {
+    font-weight: 600;
+  
+    &:visited {
+      font-weight: normal !important;
+      color: var(--purple);
+    }
+  
+    &:hover {
+      color: var(--deep);
+    }
+  }
+  
+  .arrowBut {
+    background: var(--purple);
+    border-radius: 4px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid var(--purple);
+  
+    &.inverse {
+      background-color: var(--white);
+      border: 1px solid var(--purple);
+      color: var(--purple) !important;
+    }
+  
+    &:hover, .inverse:hover {
+      background-color: var(--purple);
+      border: 1px solid var(--white);
+      color: var(--white) !important;
+    }
+  }
+  
+  .blogPost .arrowBut {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+    text-decoration: none;
+  }
+  
+  .btn {
+    &.CTA {
+      background: var(--purple);
+      color: var(--white);
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 1px solid var(--purple);
+      margin: 0 0 0 2rem;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+  
+      &:hover {
+        background: var(--deep);
+        color: var(--white) !important;
+      }
+  
+      &2 {
+        background: var(--orange);
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid var(--orange);
+        margin: 0 auto;
+        transition: all 0.3s ease-in-out;
+        width: auto;
+        padding: 8px 16px;
+        text-decoration: none;
+  
+        &:hover {
+          background: var(--white);
+          color: var(--orange);
+        }
+      }
+    }
+  
+    &.ghost {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      color: var(--purple);
+      background: var(--white);
+      border: 1px solid var(--purple);
+      border-radius: 5px;
+      padding: 10px 20px;
+      display: block;
+      max-width: 160px;
+      margin: 24px auto 0;
+  
+      &:hover, &:focus {
+        color: var(--white);
+        background: var(--purple);
+        border: 1px solid var(--purple);
+      }
+    }
+  
+    &.CTA2:hover {
+      background: var(--white);
+      color: var(--orange);
+    }
+  
+    &.yellowBut {
+      background: var(--yellow);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 1rem auto;
+  
+      &:hover {
+        background: var(--orange);
+        color: #fff;
+      }
+    }
+  }
+  
+  .arrowBut.inverse:hover,
+  .firstRow .arrowBut:hover,
+  .fourCols .arrowBut:hover {
+    background-color: var(--purple);
+    border: 1px solid var(--white);
+    color: var(--white) !important;
+  }
+  
+  .featured .arrowBut:hover,
+  .btn.CTA:hover {
+    background: var(--deep);
+    color: var(--white) !important;
+  }
+  
+  .funding .btn.CTA {
+    border: none;
+  
+    &:hover {
+      background: var(--orange);
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  
+  .featured .CTA {
+    margin: 0;
+    color: var(--white) !important;
+  
+    &:hover {
+      margin: 0;
+    }
+  }
+  
+  .buttonRow {
+    margin: 3rem auto;
+  }
+  
+  #navbarScroll {
+    flex-grow: 0;
+  }
+  
